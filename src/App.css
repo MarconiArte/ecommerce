@@ -16,19 +16,79 @@ html {
     background-color: pink;
     padding: 2rem;
     color: white;
-    box-shadow:0 1px 2rem rgb(173, 173, 173);
+    /*box-shadow:0 1px 2rem rgb(173, 173, 173);*/
 }
 
-.header-icono {
+.header-logo {
     padding: 0 1rem 0 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 100%;
 }
 
 .header-secciones{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 2rem;
     gap:1rem;
     width: 100%;
+}
+
+.header-icono {
+    margin-right: 1rem;
+}
+.conteiner-card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin:4rem;
+
+}
+.card {
+    margin: 1rem 0;
+    width: 30rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow:0 1px 2rem pink;
+    padding-bottom: 1rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card-nombre {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.card-p {
+    padding: 0 1rem 1rem 1rem;
+    font-size:1rem ;
+}
+
+.ubicacion {
+    background-color: pink;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sumar-restar{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.boton {
+    background-color: pink;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.boton:hover {
+    background-color: rgb(211, 130, 143);
+    box-shadow:0 1px 2rem rgb(211, 130, 143);
 }
