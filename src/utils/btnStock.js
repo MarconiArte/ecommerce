@@ -1,5 +1,5 @@
 import {useState} from 'react'
-const btnStock = () => {
+const BtnStock = () => {
     const [rate, setRate] = useState(0)
 
     const suma = () => {
@@ -25,7 +25,7 @@ const btnStock = () => {
                     
 }
 
-export default btnStock
+export default BtnStock
 
 
 

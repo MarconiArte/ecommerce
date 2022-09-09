@@ -1,5 +1,5 @@
 
-import btnStock from '../utils/btnStock'
+import BtnStock from '../utils/btnStock'
 const Ubicacion = () => {
 
    //btnStock()
@@ -13,7 +13,7 @@ const Ubicacion = () => {
                     <h2 className="card-nombre">Lemonpie</h2>
                     <p className="card-p">Sableé de vainilla, curd de limón, y merengue italiano.</p>
                     <div className="sumar-restar">
-                        <btnStock />
+                        <BtnStock />
                     </div> 
                 </div>
             </div>
