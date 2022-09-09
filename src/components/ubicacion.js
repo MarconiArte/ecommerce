@@ -1,20 +1,9 @@
-import {useState} from 'react'
+
+import btnStock from '../utils/btnStock'
 const Ubicacion = () => {
-    const [rate, setRate] = useState(0)
 
-    const suma = () => {
-        if (rate < 5) {
-            setRate(rate+1)
-        }
-    }
-
-    const resta = () => {
-        if (rate > 0) {
-            setRate(rate-1)
-        }
-    }
-   
-    return(
+   //btnStock()
+    return( 
         <>
             <div className="ubicacion">
                 <h2>Ubicación</h2>
@@ -24,9 +13,7 @@ const Ubicacion = () => {
                     <h2 className="card-nombre">Lemonpie</h2>
                     <p className="card-p">Sableé de vainilla, curd de limón, y merengue italiano.</p>
                     <div className="sumar-restar">
-                        <button onClick={resta} className="boton">-</button>
-                        <p>{rate}</p>
-                        <button onClick={suma} className="boton">+</button>
+                        <btnStock />
                     </div> 
                 </div>
             </div>

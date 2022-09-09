@@ -5,7 +5,6 @@ import CustomFetch from "../utils/customFetch"
 const Cards = () => {
     const [data, setData] = useState([])
 
-    console.log(Products)
     useEffect(() => {
         
         CustomFetch(2000, Products)
@@ -16,17 +15,16 @@ const Cards = () => {
     return(
         <>
             {
-                data.map(item => {
-                    <div className="conteiner-card">
-                        <Card 
-                            key={item.id}
-                            id={item.id}
-                            imagen={item.imagen}
-                            ingredientes={item.ingredientes}
-                            precio={item.precio}
-                        />
-                    </div>
-                })
+                data.map(item =>
+                    <Card 
+                        key={item.id}
+                        id={item.id}
+                        imagen={item.imagen}
+                        nombre={item.nombre}
+                        ingredientes={item.ingredientes}
+                        precio={item.precio}
+                        />        
+                )
             }
         </>
     )

@@ -7,7 +7,11 @@ const App = () => {
   return (
     <>  
         <Navbar />
-        <Cards />
+        
+        <div className="conteiner-card">
+          <Cards />
+        </div>
+        
         <Ubicacion />
     </>
   );

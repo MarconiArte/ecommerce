@@ -42,7 +42,6 @@ html {
     justify-content: center;
     gap: 2rem;
     margin:4rem;
-
 }
 .card {
     margin: 1rem 0;
@@ -86,6 +85,7 @@ html {
     border: none;
     padding: 1rem;
     border-radius: 1rem;
+    margin-top:1rem;
 }
 
 .boton:hover {
