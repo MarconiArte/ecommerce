@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState} from "react"
 import Card from "../components/card"
 import Products from "../utils/products"
 import CustomFetch from "../utils/customFetch"
@@ -21,8 +21,6 @@ const Cards = () => {
                         id={item.id}
                         imagen={item.imagen}
                         nombre={item.nombre}
-                        ingredientes={item.ingredientes}
-                        precio={item.precio}
                         />        
                 )
             }

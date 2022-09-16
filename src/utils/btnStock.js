@@ -11,14 +11,21 @@ const BtnStock = () => {
     const resta = () => {
     if (rate > 0) {
         setRate(rate-1)
+        }
     }
+
+    const alerts = () =>{
+        alert('SE AÑADIO AL CARRITO EL PRODUCTO')
     }
 
     return(
             <>
-                <button onClick={resta} className="boton">-</button>
+            <div className='btn-stock'>
+                <button onClick={resta} className="boton menosmas">-</button>
                     <p>{rate}</p>
-                <button onClick={suma} className="boton">+</button>
+                <button onClick={suma} className="boton menosmas">+</button>
+                <button onClick={alerts} className='boton'>Añadir al carrito</button>
+            </div>               
             </>
             
     )

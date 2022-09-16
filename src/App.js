@@ -1,18 +1,10 @@
 import './App.css'
-import Navbar from './components/navbar';
-import Cards from './containers/cards';
-import Ubicacion from './components/ubicacion';
+import Home from './page/home';
 
 const App = () => {
   return (
     <>  
-        <Navbar />
-        
-        <div className="conteiner-card">
-          <Cards />
-        </div>
-        
-        <Ubicacion />
+        <Home />
     </>
   );
 }
