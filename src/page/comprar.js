@@ -5,47 +5,34 @@ import Product from '../components/product'
 import { useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
 const Comprar = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState({})
     const {id} = useParams()
 
     useEffect(() => {
-        if (id) {
-            CustomFetch(2000, Products.filter(item => item.id == id))
-            .then(result => setData(result))
-            .catch(err => console.log(err))
-        }else {
-            CustomFetch(2000, Products)
-            .then(result => setData(result))
-            .catch(err => console.log(err))
-        }
         
-    },[id])
+            CustomFetch(0, Products.find(item => item.id == id))
+            .then(result => setData(result))
+            .catch(err => console.log(err))
+        
+    },[])
+
+    const onAdd = (quantity) =>{
+        alert(`${quantity} skere`)
+    }
 
     return(
         <>
             <div className="conteiner-comprar">
 
                 <div className='contenedor-comprar-one'>
-                    {data.map(item =>
-                            <Product
-                                key={item.id}
-                                id={item.id}
-                                imagen={item.imagen}
-                                />        
-                        )}
+                   
+                            <Product details={data} />
+                        
                 </div>
 
                 <div className='contenedor-comprar-two'>
-                    {data.map(item =>
-                        <Product
-                            key={item.id}
-                            nombre={item.nombre}
-                            ingredientes={item.ingredientes}
-                            precio={item.precio}
-                        />        
-                    )}
                     <div className='btnstock-comprar'>
-                        <BtnStock /> 
+                        <BtnStock initial={1} stock ={5} onAdd={onAdd} /> 
                     </div>
                     
                 </div>

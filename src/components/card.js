@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Card = ({id,imagen,nombre,precio}) => {
     return(
         <> 
@@ -6,7 +8,7 @@ const Card = ({id,imagen,nombre,precio}) => {
                 <img className="img-card" src={imagen}/>
                 <h2 className="card-nombre">{nombre}</h2>
                 <p className="card-precio">{precio}</p>
-                <button className="boton-pedido">Hacer pedido</button>
+                <Link className="boton-pedido" to={`/comprar/${id}`}>Hacer pedido</Link>
             </div>
        
         </>

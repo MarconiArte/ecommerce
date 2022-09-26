@@ -5,7 +5,7 @@ const Products = [
       nombre:'Torta diablo',
       ingredientes:'Masa húmeda de chocolate con almíbar de amarula, crema de chocolate, pasta praliné de avellanas.',
       precio:'$3400/$3700',
-      categoria:'1'
+      categoryId:'10'
     },
 
     {
@@ -14,7 +14,7 @@ const Products = [
       nombre:'Cheesecake de chocolate blanco y frutos rojos',
       ingredientes:'Base de galletas caseras, crema de queso y chocolate blanco, mermelada casera de frutos rojos, ganache de chocolate blanco para la decoración.',
       precio:'$3300/$3600',
-      categoria:'1'
+      categoryId:'10'
     },
 
     {
@@ -23,7 +23,7 @@ const Products = [
       nombre:'Lemonpie',
       ingredientes:'Sableé de vainilla, curd de limón, y merengue italiano.',
       precio:'$3000/$3300',
-      categoria:'1'
+      categoryId:'10'
     },
 
     {
@@ -32,7 +32,7 @@ const Products = [
       nombre:'Pavlova',
       ingredientes:'Merengue, dulce casero de frutos rojos, crema chantilly, frutillas, frambuesas, y arándanos.',
       precio:'$3200/$3500',
-      categoria:'1'
+      categoryId:'2'
     },
     
     {
@@ -41,7 +41,7 @@ const Products = [
       nombre:'Brownie y frambuesas',
       ingredientes:'Brownie, dulce de leche, crema chantilly, compota de frambuesas, frambuesas, frutillas, arándanos.',
       precio:'$3300/$3600',
-      categoria:'1'
+      categoryId:'2'
     },
 ]
 

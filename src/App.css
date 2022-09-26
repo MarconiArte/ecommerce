@@ -95,6 +95,7 @@ html {
     color:white;
     text-transform: uppercase;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .boton:hover {
@@ -187,4 +188,15 @@ html {
     font-size: 3rem;
     color: red;
     margin-top:3rem ;
+}
+
+.contenedor-productos{  
+    background-color: pink;
+    margin: 1rem;
+}
+
+.productos-botones{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
 }
