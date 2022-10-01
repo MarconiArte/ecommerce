@@ -26,7 +26,7 @@ const Comprar = () => {
 
                 <div className='contenedor-comprar-one'>
                    
-                            <Product details={data} />
+                      <Product details={data} />
                         
                 </div>
 
