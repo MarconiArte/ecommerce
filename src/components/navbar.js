@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="header-icono">
-                      <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-cart--v1.png"/>
+                      <Link to="/cart"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-cart--v1.png"/></Link>
                 </div>
             </div> 
             

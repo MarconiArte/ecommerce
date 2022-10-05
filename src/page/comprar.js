@@ -3,9 +3,10 @@ import Products from '../utils/products'
 import CustomFetch from '../utils/customFetch'
 import Product from '../components/product'
 import { useEffect, useState} from 'react'
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 const Comprar = () => {
     const [data, setData] = useState({})
+    const [cartGo, setcartGo] = useState(false)
     const {id} = useParams()
 
     useEffect(() => {
@@ -17,7 +18,9 @@ const Comprar = () => {
     },[])
 
     const onAdd = (quantity) =>{
-        alert(`${quantity} skere`)
+        setcartGo(true)
+
+        alert(`${quantity} productos se agregaron al carrito`)
     }
 
     return(
@@ -32,7 +35,12 @@ const Comprar = () => {
 
                 <div className='contenedor-comprar-two'>
                     <div className='btnstock-comprar'>
-                        <BtnStock initial={1} stock ={5} onAdd={onAdd} /> 
+                        {
+                            cartGo
+                            ? <Link to="/cart" style={{textDecoration: "none"}}><button className='boton'>Ir al carrito</button></Link>
+                            :<BtnStock initial={1} stock ={5} onAdd={onAdd} />  
+                        }
+                        
                     </div>
                     
                 </div>

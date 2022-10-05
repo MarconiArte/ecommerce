@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contacto from './contacto';
 import ContenedorHome from '../containers/contenedorHome';
 import Categorias from '../components/categorias';
+import Cart from '../components/cart';
 
 
 const Home = () => {
@@ -24,6 +25,8 @@ const Home = () => {
           <Route path='/category/:id' element={<Categorias />} /> 
 
           <Route path='/category' element={<Categorias />} />
+          
+          <Route path='/cart' element={<Cart />} />
         </Routes>
           
         

@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import Products from './products'
 const BtnStock = ({initial, stock, onAdd}) => {
     const [rate, setRate] = useState(initial)
 
