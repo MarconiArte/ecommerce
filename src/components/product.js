@@ -13,8 +13,6 @@ const Product = ({details}) => {
             </div>
         </div>
         
-           
-               
         </>
     )
 }

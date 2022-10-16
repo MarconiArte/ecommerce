@@ -2,12 +2,14 @@ import BtnStock from '../utils/btnStock'
 import Products from '../utils/products'
 import CustomFetch from '../utils/customFetch'
 import Product from '../components/product'
-import { useEffect, useState} from 'react'
+import { useContext, useEffect, useState} from 'react'
 import {Link, useParams} from 'react-router-dom'
+import { CartContext } from '../components/cartContext'
 const Comprar = () => {
     const [data, setData] = useState({})
     const [cartGo, setcartGo] = useState(false)
     const {id} = useParams()
+    const { addItem} = useContext(CartContext)
 
     useEffect(() => {
         
@@ -19,8 +21,8 @@ const Comprar = () => {
 
     const onAdd = (quantity) =>{
         setcartGo(true)
-
         alert(`${quantity} productos se agregaron al carrito`)
+        addItem(data, quantity)
     }
 
     return(
