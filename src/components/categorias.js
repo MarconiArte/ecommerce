@@ -28,7 +28,7 @@ const Categorias = () => {
         <>
             <div className="productos-botones">
                 <Link to={'/category/10'} className="boton">Categoria 1</Link>
-                <Link to={'/category/2'} className="boton">Categoria 2</Link>
+                <Link to={'/category/20'} className="boton">Categoria 2</Link>
             </div>
             
             

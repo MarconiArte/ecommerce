@@ -32,7 +32,7 @@ const Products = [
       nombre:'Pavlova',
       ingredientes:'Merengue, dulce casero de frutos rojos, crema chantilly, frutillas, frambuesas, y arándanos.',
       precio:'$3200/$3500',
-      categoryId:'2'
+      categoryId:'20'
     },
     
     {
@@ -41,7 +41,7 @@ const Products = [
       nombre:'Brownie y frambuesas',
       ingredientes:'Brownie, dulce de leche, crema chantilly, compota de frambuesas, frambuesas, frutillas, arándanos.',
       precio:'$3300/$3600',
-      categoryId:'2'
+      categoryId:'20'
     },
 ]
 
