@@ -15,23 +15,13 @@ const CartContextProvider = ({children}) => {
                 setCartList([...cartList, {...item,quantity}])
             }
         }
-    
-
         const isInCart = (id) => {
             return cartList.find(products => products.id === id ) ? true:false
         }
-
-
         const clear = () => {
             setCartList([])
         }
-
-
         const remove = (id) => setCartList(cartList.filter(products => products.id !== id))
-
-
-
-        
 
     return(
         <>

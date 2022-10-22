@@ -6,13 +6,12 @@ const Navbar = () => {
           
             <div className="header-div">
                 
-                <Link to="/"><img className="header-logo" src="../img/logo.png"></img></Link> 
+                <Link to="/"><img className="header-logo" src="https://imgur.com/BVuLHts.png"></img></Link> 
     
                 <div className="header-secciones">
-                        <Link to="/" className="nav-p"><p>Home</p></Link>
-                        <Link to="/category/:id" className="nav-p"><p>Productos</p></Link>
-                        <Link to="/contacto" className="nav-p"><p>Contacto</p></Link>
-                      <p>¿Comó llegar?</p>
+                        <Link to="/category/10" className="nav-p">Categoria</Link>
+                        <Link to="/category/20" className="nav-p">Categoria 2</Link>
+                        <Link to="/category/30" className="nav-p">Categoria 3</Link>
                 </div>
 
                 <div className="header-icono">
