@@ -1,36 +1,26 @@
-import {useState} from 'react'
-const BtnStock = ({initial, stock, onAdd}) => {
+import { useState } from "react";
+const ItemCount = ({initial, stock, onAdd}) =>{
     const [rate, setRate] = useState(initial)
 
-    const suma = () => {
-      setRate(rate+1)     
+    const suma = () =>{
+        setRate(rate+1)
     }
 
-    const resta = () => {
-        setRate(rate-1) 
+    const resta = () =>{
+        setRate(rate-1)
     }
-
-    console.log(rate)
 
     return(
-            <>
-            <div className='btn-stock'>
+        <>
+             <div className='btn-stock'>
                 <button onClick={resta} disabled={rate<=1} className="boton menosmas">-</button>
                     <p>{rate}</p>
                 <button onClick={suma} disabled={rate>=stock} className="boton menosmas">+</button>
                 <button onClick={() => onAdd(rate)} className='boton' disabled={stock<=0}>Añadir al carrito</button>
-            </div>               
-            </>
-            
+            </div>   
+
+        </>
     )
-                    
 }
 
-export default BtnStock
-
-
-
-
-
-
-
+export default ItemCount;

@@ -67,7 +67,7 @@ const Cart = () => {
                     cartList.length === 0 ? 
                     <div>
                         <Link to={"/"}><button className="boton">Seguir comprando</button></Link>
-                        <p>Carrito vacio mi pana</p> 
+                        <p>Carrito vacio actualmente</p> 
                     </div>:
                     <div>
                         <Link to='/'><button className="boton" onClick={crearOrden}>Terminar compra</button></Link>
