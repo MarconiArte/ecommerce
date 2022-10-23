@@ -10,7 +10,7 @@ const BtnStock = ({initial, stock, onAdd}) => {
         setRate(rate-1) 
     }
 
-    
+    console.log(rate)
 
     return(
             <>

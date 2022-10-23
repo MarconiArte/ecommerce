@@ -1,7 +1,9 @@
 import { Link} from "react-router-dom";
 import BtnStock from "../../utils/btnStock"
 import {useContext } from "react";
- import { CartContext } from '../../components/cartContext'
+import { CartContext } from '../../components/cartContext'
+import Swal from "sweetalert2";
+ 
 
 const ProductsDetails = ({detail}) =>{
 
@@ -9,7 +11,18 @@ const ProductsDetails = ({detail}) =>{
     const { addItem, isInCart, remove} = useContext(CartContext)
 
     const onAdd = (quantity) =>{
-        alert(`${quantity} productos se agregaron al carrito`)
+        Swal.fire({
+            title: 'Tu producto se agrego al carrito correctamente',
+            color:'black',
+            background:'pink',
+            confirmButtonColor: "pink",
+            showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+            }
+        })
         addItem(detail, quantity)
     }
 

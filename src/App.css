@@ -8,6 +8,7 @@ html {
     font-size: 62.5%; 
 }
 
+
 /*----------------COMPONENTES---------------*/
 /*----------------Navbar---------------------*/
 .header-div {
@@ -61,24 +62,10 @@ html {
 }
 
 .img-card {
-    width: 100%;
-    border-radius: 2rem 2rem 0 0;
+    width: 250px;
+    border-radius: 2rem;
+    margin: 1rem;
 }
-
-.card-nombre {
-    padding: 1rem;
-    font-size: 2rem;
-}
-
-.card-p {
-    padding: 0 1rem 1rem 1rem;
-    font-size:1rem ;
-}
-.card-precio {
-    color: red;
-    font-size: 2rem;
-}
-
 
 /*-----------------BTN-----------------------*/
 .boton, .boton-pedido {
@@ -160,14 +147,11 @@ html {
 /*-------------------PRODUCT--------------------*/
 .product-conteiner {
     display: flex;
-    gap: 1rem;
-    margin:1rem;
     padding: 1rem;
 }
 .product-conteiner:hover{
     background-color: rgb(188, 99, 114);
     color: white;
-    border-radius: 2rem;
 }
 
 .img-product{

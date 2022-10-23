@@ -23,9 +23,13 @@ const CartContextProvider = ({children}) => {
         }
         const remove = (id) => setCartList(cartList.filter(products => products.id !== id))
 
+        const totalCompra=()=>{
+            return cartList.reduce((val, carrito)=> val + (carrito.precio*carrito.stock),0)
+        }
+
     return(
         <>
-             <CartContext.Provider value={{cartList, addItem, remove, clear, isInCart}}>
+             <CartContext.Provider value={{cartList, addItem, remove, clear, isInCart, totalCompra}}>
                 {children}
              </CartContext.Provider>
         
