@@ -1,8 +1,8 @@
-import customFetch from "../../utils/customFetch"
 import { useEffect, useState } from "react"
-import products from "../../utils/products"
 import ProductsDetails from "./productsDetails"
 import { useParams } from "react-router-dom"
+import {db} from '../../utils/fbConfig'
+import {doc, getDoc} from 'firebase/firestore'
 
 const ProductsDetailsConteiner = () =>{
 
@@ -10,18 +10,16 @@ const ProductsDetailsConteiner = () =>{
     const {id} = useParams()
 
     useEffect(() => {
-        customFetch(2000, products.find(item => item.id == id))
-        .then(result => setData(result))
-        .catch(error => console.log(error))
-       
-    },[])
-
- 
+        const qDoc = doc(db, 'productos', id)
+        
+        getDoc(qDoc)
+            .then(result => setData({id: result.id, ...result.data()}))
+            .catch(error => console.log(error))
+    },[id])
 
     return(
         <>
             <ProductsDetails detail={data}/>
-        
         </>
     )
 }

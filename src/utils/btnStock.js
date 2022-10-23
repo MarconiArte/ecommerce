@@ -18,7 +18,7 @@ const BtnStock = ({initial, stock, onAdd}) => {
                 <button onClick={resta} disabled={rate<=1} className="boton menosmas">-</button>
                     <p>{rate}</p>
                 <button onClick={suma} disabled={rate>=stock} className="boton menosmas">+</button>
-                <button onClick={() => onAdd(rate)} className='boton'>Añadir al carrito</button>
+                <button onClick={() => onAdd(rate)} className='boton' disabled={stock<=0}>Añadir al carrito</button>
             </div>               
             </>
             

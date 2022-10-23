@@ -1,23 +1,29 @@
-import products from "../../utils/products"
+
 import { useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
-import CustomFetch from "../../utils/customFetch"
 import ItemList from "./itemList"
+import { db } from '../../utils/fbConfig'
+import { collection,query,getDocs,where } from 'firebase/firestore'
 
 const ItemContainer = () => {
     const [data, setData] = useState([])
     const {id} = useParams()
     useEffect(() => {
-        
-        if (id) {
-            CustomFetch(2000, products)
-            .then(result => setData(result.filter(item => item.categoryId == id)))
-            .catch(err => console.log(err))
-        }else {
-            CustomFetch(2000, products)
-            .then(result => setData(result))
-            .catch(err => console.log(err))
+
+        let q 
+
+        if(id){
+            q = query(collection(db,"productos"), where('categoryId','==',parseInt(id)))
+        }else{q = query(collection(db, "productos"))}
+
+        const fsFecth = async() => {
+            const QuerySnapshot = await getDocs(q);
+            const dataFb = QuerySnapshot.docs.map(document => ({id:document.id, ...document.data()}));
+            return dataFb;
         }
+
+        fsFecth().then(result => setData(result))
+        .catch(error => console.log(error)) 
 
     },[id])
     

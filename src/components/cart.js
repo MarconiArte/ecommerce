@@ -9,26 +9,28 @@ const Cart = () => {
     
     return(
         <>
-            <h2>Soy el carrito </h2>
-            <button onClick={clear}>Limpiar carrito</button>
-            {
-                cartList.length === 0 ? 
-                <div>
-                    <Link to={"/"}><button>Seguir comprando</button></Link>
-                    <p>Carrito vacio mi pana</p> 
-                </div>:
-                <div>
-                    {cartList.map(item => 
-                        
-                        <div key={item.id}>
-                            <img src={item.imagen} />
-                            <div>{item.nombre}</div>
-                            <div>{item.precio}</div>
-                        </div>
-                           
-                        )}
-                </div> 
-            }
+            <div className="conteiner-comprar">
+                <button className="boton" onClick={clear}>Limpiar carrito</button>
+                {
+                    cartList.length === 0 ? 
+                    <div>
+                        <Link to={"/"}><button className="boton">Seguir comprando</button></Link>
+                        <p>Carrito vacio mi pana</p> 
+                    </div>:
+                    <div>
+                        {cartList.map(item => 
+                            
+                            <div key={item.id}>
+                                <img src={item.imagen} />
+                                <div className="product-nombre">{item.nombre}</div>
+                                <div className="product-precio">{item.precio}</div>
+                            </div>
+                            
+                            )}
+                    </div>
+                
+                }
+            </div>
         </>
     )
 }
