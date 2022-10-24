@@ -3,7 +3,7 @@ Proyecto creado para poner en práctica los conocimientos adquiridos en el curso
 
 Vista previa👇
 
-![]https://imgur.com/28i0tXk
+! []https://imgur.com/28i0tXk
 
 Funcionalidades ⚒️
 Catálogo de compras: Es la sección del proyecto en donde va a poder encontrar cards con todos los productos ofrecidos y en cada una de ellas un botón "Comprar" interactivo en el cual al hacer click en él te dirige a otra sección llamada Detalles del producto
