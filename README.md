@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+Pia Pasteleria
+Proyecto creado para poner en práctica los conocimientos adquiridos en el curso de React.js de Coderhouse. Se trata de un e-commerce de productos de pasteleria.
+Vista previa👇
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Funcionalidades ⚒️
+Catálogo de compras: Es la sección del proyecto en donde va a poder encontrar cards con todos los productos ofrecidos y en cada una de ellas un botón "Comprar" interactivo en el cual al hacer click en él te dirige a otra sección llamada Detalles del producto
+Detalles del producto: Sección dedicada a cada producto con descripción personalizada y un contador con stock limitado. Cuenta tambien con un botón Agregar al carrito el cual al ser clickeado cambia el contador por un botón Ir al carrito que nos redirige al carrito de compras.
+Carrito de compras: Muestra todos los productos previamente seleccionados con cantidades y precios unitarios incluidos.
+Poseé también un botón Vaciar carrito que cumple la función de eliminar todo lo que hayamos agregado previamente.
+Cuenta con un contador de productos agregados el cual se va actualizando dependiendo si seguimos agregando y/o eliminando productos
+Por cada item se encuentra un botón de Eliminar producto que elimina el item completo de ser requerido.
+Orden de compra: Se encuentra dentro de la sección del Carrito de compras y muestra el precio total de los productos. Cuenta con un botón Terminar compra el cual luego de ser ejecutado sale una alerta indicando que la orden ya fue creada (Se guarda la orden dentro de la base de datos de Firebase) y el carrito de compras se vacia automáticamente mostrando un mensaje que nos da la opción de volver a la página principal, es decir, al Catalogo de compras.
+Tecnologías utilizadas 🎯
+HTML
+CSS
+Javascript
+NodeJs
+ReactJs
+Firebase
+SweetAlert
+Acceso al proyecto 📂
+Descargue el proyecto haciendo click en el botón verde Code para obtener el archivo comprimido ZIP, una vez descargado ya puede extraer el archivo y abrirlo desde su editor de código de preferencia.
 
-### `npm start`
+⚠️ Es requisito tener previamente instalado NodeJs ⚠️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En su editor de código ingrese el siguiente comando npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Luego escriba el comando npm start para abrir el proyecto en el navegador
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Autores 👩‍💻
+Marcos Niz

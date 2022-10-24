@@ -41,10 +41,10 @@ const ProductsDetails = ({detail}) =>{
                         {
                             isInCart(detail.id) ? 
                             <div>
-                                <p>hay algo en el carrito</p>
+                                <p  className="cartVacio">Hay productos en el carrito</p>
                                 <button className="boton" onClick={() => remove(detail.id)}>remove</button>
                             </div>
-                            : <p>Carrito vacio actualmente</p>
+                            : <p className="cartVacio">Carrito vacio actualmente</p>
                         }
                         {
                             isInCart(detail.id) ? <Link to="/cart" style={{textDecoration: "none"}}><button className='boton'>Ir al carrito</button></Link>

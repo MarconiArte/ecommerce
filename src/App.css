@@ -8,7 +8,13 @@ html {
     font-size: 62.5%; 
 }
 
-
+.cartVacio{
+    background-color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
 /*----------------COMPONENTES---------------*/
 /*----------------Navbar---------------------*/
 .header-div {
@@ -45,22 +51,6 @@ html {
     
 }
 /*----------------CARDS-------------------------*/
-.conteiner-card {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin:4rem;
-}
-.card {
-    margin: 1rem 0;
-    width: 30rem;
-    background-color: white;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow:0 1px 2rem rgb(211, 130, 143);
-    padding-bottom: 1rem;
-}
-
 .img-card {
     width: 250px;
     border-radius: 2rem;
@@ -114,6 +104,7 @@ html {
 .conteiner-comprar {
     background-color:pink;
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 3rem 0 3rem 0;
     gap: 2rem;
@@ -128,6 +119,9 @@ html {
 }
 
 .contenedor-comprar-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
 
 }

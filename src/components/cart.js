@@ -67,7 +67,7 @@ const Cart = () => {
                     cartList.length === 0 ? 
                     <div>
                         <Link to={"/"}><button className="boton">Seguir comprando</button></Link>
-                        <p>Carrito vacio actualmente</p> 
+                        <p  className="cartVacio">Carrito vacio actualmente</p> 
                     </div>:
                     <div>
                         <Link to='/'><button className="boton" onClick={crearOrden}>Terminar compra</button></Link>
@@ -77,7 +77,7 @@ const Cart = () => {
                             <div key={item.id}>
                                 <img className="img-card" src={item.imagen} />
                                 <div className="product-nombre">{item.nombre}</div>
-                                <div className="product-precio">{item.precio}</div>
+                                <div className="product-precio">${item.precio}</div>
                             </div>
                             
                             )}
