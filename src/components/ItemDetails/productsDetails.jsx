@@ -48,7 +48,7 @@ const ProductsDetails = ({detail}) =>{
                         }
                         {
                             isInCart(detail.id) ? <Link to="/cart" style={{textDecoration: "none"}}><button className='boton'>Ir al carrito</button></Link>
-                            : <ItemCount initial={1} stock={5} onAdd={onAdd} />
+                            : <ItemCount initial={detail.initial} stock={detail.stock} onAdd={onAdd} />
                         }
 
                     <Link to="/"><button className='boton'>Seguir comprando</button></Link>
