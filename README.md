@@ -13,6 +13,7 @@ Cuenta con un contador de productos agregados el cual se va actualizando dependi
 Por cada item se encuentra un botón de Eliminar producto que elimina el item completo de ser requerido.
 Orden de compra: Se encuentra dentro de la sección del Carrito de compras y muestra el precio total de los productos. Cuenta con un botón Terminar compra el cual luego de ser ejecutado sale una alerta indicando que la orden ya fue creada (Se guarda la orden dentro de la base de datos de Firebase) y el carrito de compras se vacia automáticamente mostrando un mensaje que nos da la opción de volver a la página principal, es decir, al Catalogo de compras.
 Tecnologías utilizadas 🎯
+
 HTML
 CSS
 Javascript
